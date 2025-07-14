@@ -3,9 +3,9 @@ import { clerkClient } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import { StreamChat } from "stream-chat";
 
-const api_key = "r95qd9xpcsdb";
+const api_key = "";
 const api_secret =
-  "d2q9ye6dnyfk22r58w3udbc9qtek78fbxamp6ugj5wx62bvprwug5j85rugg4mzt";
+  "";
 // const user_id = "john";
 
 export async function POST(request) {
@@ -65,7 +65,7 @@ export async function POST(request) {
       }
     }
 
-    await channel2.addMembers([userId]); // ✅ add each user here!
+    await channel2.addMembers([userId]); 
   }
 
   console.log(" New user created and added to channels");
